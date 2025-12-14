@@ -8,21 +8,23 @@ function Navbar() {
   return (
     <header className="w-full bg-white shadow-sm">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <img
-            src={Companylogo}
-            alt="NextPay Logo"
-            className="h-8 w-auto"
-          />
-        </div>
+
+        <Link to="/" className="flex items-center gap-2">
+          <img src={Companylogo} alt="NextPay Logo" className="h-8 w-auto" />
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 text-slate-700 font-medium">
-          <Link to="" className="hover:text-blue-600 cursor-pointer">Services</Link>
-          <Link to="/loan-page" className="hover:text-blue-600 cursor-pointer">About</Link>
-          <Link to="" className="hover:text-blue-600 cursor-pointer">Contact</Link>
+          <Link to="" className="hover:text-blue-600 cursor-pointer">
+            Services
+          </Link>
+          <Link to="/loan-page" className="hover:text-blue-600 cursor-pointer">
+            About
+          </Link>
+          <Link to="" className="hover:text-blue-600 cursor-pointer">
+            Contact
+          </Link>
         </ul>
 
         {/* Apply Button */}
