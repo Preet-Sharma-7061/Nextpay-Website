@@ -47,16 +47,25 @@ function Navbar() {
       {open && (
         <div className="md:hidden bg-white border-t">
           <ul className="flex flex-col gap-4 px-6 py-4 text-slate-700 font-medium">
-            <Link to="" className="hover:text-blue-600 cursor-pointer">
+            <Link
+              onClick={() => setOpen(!open)}
+              to=""
+              className="hover:text-blue-600 cursor-pointer"
+            >
               Services
             </Link>
             <Link
+              onClick={() => setOpen(!open)}
               to="/loan-page"
               className="hover:text-blue-600 cursor-pointer"
             >
               About
             </Link>
-            <Link to="" className="hover:text-blue-600 cursor-pointer">
+            <Link
+              onClick={() => setOpen(!open)}
+              to=""
+              className="hover:text-blue-600 cursor-pointer"
+            >
               Contact
             </Link>
             <button className="mt-2 bg-linear-to-r from-blue-600 to-teal-500 text-white py-2 rounded-full">
