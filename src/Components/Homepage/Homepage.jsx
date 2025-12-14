@@ -5,7 +5,7 @@ import LoanStep from "./LoanStep";
 import Aboutpage from "./Aboutpage";
 import LoanOptions from "./LoanOptions";
 import Testimonial from "./Testimonial";
-import ApplyProcesspage from "./ApplyProcesspage";
+import ApplyProcesspage from "./ApplyProcessPage";
 
 function Homepage() {
   return (
